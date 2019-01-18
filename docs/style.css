@@ -32,29 +32,27 @@ html, body {
   #sidebar a:link, #sidebar a:visited {
     text-decoration: none;
     color: #323232; }
-  #sidebar ::-webkit-scrollbar {
+  #sidebar::-webkit-scrollbar {
     width: 2px;
     height: 2px; }
-  #sidebar ::-webkit-scrollbar-button {
+  #sidebar::-webkit-scrollbar-button {
     width: 0px;
     height: 0px; }
-  #sidebar ::-webkit-scrollbar-thumb {
+  #sidebar::-webkit-scrollbar-thumb {
     background: #e1e1e1;
     border: 0px none #ffffff;
     border-radius: 50px; }
-  #sidebar ::-webkit-scrollbar-thumb:hover {
-    background: #ffffff; }
-  #sidebar ::-webkit-scrollbar-thumb:active {
+  #sidebar::-webkit-scrollbar-thumb:active {
     background: #000000; }
-  #sidebar ::-webkit-scrollbar-track {
+  #sidebar::-webkit-scrollbar-track {
     background: #666666;
     border: 0px none #ffffff;
     border-radius: 50px; }
-  #sidebar ::-webkit-scrollbar-track:hover {
+  #sidebar::-webkit-scrollbar-track:hover {
     background: #666666; }
-  #sidebar ::-webkit-scrollbar-track:active {
+  #sidebar::-webkit-scrollbar-track:active {
     background: #333333; }
-  #sidebar ::-webkit-scrollbar-corner {
+  #sidebar::-webkit-scrollbar-corner {
     background: transparent; }
 
 main {
