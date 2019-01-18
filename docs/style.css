@@ -3,4 +3,21 @@
 html{
   font-family:monospace;
 }
- 
+
+#sidebar{
+  position:relative;
+  display:inline-block;
+
+  width:35%;
+
+  background:rgba(150,150,150,1.00);
+}
+
+main{
+  position:relative;
+  display:inline-block;
+
+  width:65%;
+
+  background:rgba(255,255,255,1.00);
+}
