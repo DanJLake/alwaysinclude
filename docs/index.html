@@ -15,11 +15,23 @@
   <section id="sidebar">
     <ul>
       <a href="#img"><li>&lt;img&gt;</li></a>
+      <a href="#label"><li>&lt;label&gt;</li></a>
     </ul>
   </section>
   <main>
     <h1>alwaysInclude</h1>
-    <h2 id="img">&lt;img&gt;</h2>
+    <a href="#img"><h2 id="img">&lt;img&gt;</h2></a>
+    <p>Image tags must always contain the following:</p>
+    <ul>
+      <li>src="" - The src of an image is its source file.</li>
+      <li>alt="" - The alt value of an image is used when an image cannot be displayed. This could be read by a screen reader, or displayed on screen due to an invalid src.</li>
+    </ul>
+    <h2 id="label">&lt;label&gt;</h2>
+    <p>Label tags must always contain the following:</p>
+    <ul>
+      <li>for="" - The 'for' attribute on a label is used by screen
+         readers to associate that label with a form control.</li>
+    </ul>
   </main>
 </body>
 

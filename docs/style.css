@@ -3,7 +3,8 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: #191919; }
 
 #sidebar {
   position: relative;
@@ -24,11 +25,13 @@ html, body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8c8c8', endColorstr='#e1e1e1', GradientType=1 );
   border-right: 1px solid #c8c8c8; }
   #sidebar ul li {
-    list-style: none; }
+    list-style: none;
+    font-size: 18px; }
     #sidebar ul li:hover {
-      list-style: "-"; }
+      list-style: georgian; }
   #sidebar a:link, #sidebar a:visited {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #323232; }
 
 main {
   position: relative;
@@ -40,5 +43,21 @@ main {
   height: 100%;
   overflow-y: scroll;
   background: white; }
+  main a:link, main a:visited {
+    text-decoration: none;
+    color: #323232; }
+  main a:hover, main a:active {
+    text-decoration: none;
+    color: #969696; }
+
+h2:before {
+  color: #969696;
+  content: "# "; }
+
+p {
+  font-size: 16px; }
+
+ul li {
+  font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */
