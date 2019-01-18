@@ -5,7 +5,8 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  color: #191919; }
+  color: #191919;
+}
 
 #sidebar {
   position: relative;
@@ -23,37 +24,49 @@ html, body {
   background: -o-linear-gradient(left, #c8c8c8 0%, #e1e1e1 100%);
   background: -ms-linear-gradient(left, #c8c8c8 0%, #e1e1e1 100%);
   background: linear-gradient(to right, #c8c8c8 0%, #e1e1e1 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8c8c8', endColorstr='#e1e1e1', GradientType=1 ); }
-  #sidebar ul li {
-    list-style: none;
-    font-size: 18px; }
-    #sidebar ul li:hover {
-      list-style: georgian; }
-  #sidebar a:link, #sidebar a:visited {
-    text-decoration: none;
-    color: #323232; }
-  #sidebar::-webkit-scrollbar {
-    width: 2px;
-    height: 2px; }
-  #sidebar::-webkit-scrollbar-button {
-    width: 0px;
-    height: 0px; }
-  #sidebar::-webkit-scrollbar-thumb {
-    background: #e1e1e1;
-    border: 0px none #ffffff;
-    border-radius: 50px; }
-  #sidebar::-webkit-scrollbar-thumb:active {
-    background: #000000; }
-  #sidebar::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1);
-    border: 0px none #ffffff;
-    border-radius: 50px; }
-  #sidebar::-webkit-scrollbar-track:hover {
-    background: #666666; }
-  #sidebar::-webkit-scrollbar-track:active {
-    background: #333333; }
-  #sidebar::-webkit-scrollbar-corner {
-    background: transparent; }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#c8c8c8", endColorstr="#e1e1e1", GradientType=1 );
+}
+#sidebar ul li {
+  list-style: none;
+  font-size: 18px;
+}
+#sidebar ul li:hover {
+  list-style: georgian;
+}
+#sidebar a:link, #sidebar a:visited {
+  text-decoration: none;
+  color: #323232;
+}
+#sidebar::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+#sidebar::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+#sidebar::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+#sidebar::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+#sidebar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+#sidebar::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+#sidebar::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+#sidebar::-webkit-scrollbar-corner {
+  background: transparent;
+}
 
 main {
   position: relative;
@@ -64,30 +77,50 @@ main {
   width: 75%;
   height: 100%;
   overflow-y: scroll;
-  background: white; }
-  main a:link, main a:visited {
-    text-decoration: none;
-    color: #323232; }
-  main a:hover, main a:active {
-    text-decoration: none;
-    color: #969696; }
+  background: white;
+}
+main a:link, main a:visited {
+  text-decoration: none;
+  color: #323232;
+}
+main a:hover, main a:active {
+  text-decoration: none;
+  color: #969696;
+}
 
 footer {
   position: absolute;
   bottom: 0;
   right: 35px;
-  width: auto; }
+  width: auto;
+}
+footer a:link, footer a:visited {
+  color: red;
+  /* For browsers that do not support gradients */
+  color: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+  /* For Safari 5.1 to 6.0 */
+  color: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  /* For Opera 11.1 to 12.0 */
+  color: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  /* For Firefox 3.6 to 15 */
+  color: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+  /* Standard syntax (must be last) */
+}
 
 h2 {
-  width: auto; }
-  h2:before {
-    color: #969696;
-    content: "# "; }
+  width: auto;
+}
+h2:before {
+  color: #969696;
+  content: "# ";
+}
 
 p {
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 ul li {
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 /*# sourceMappingURL=style.css.map */

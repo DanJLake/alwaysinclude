@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
   <title>alwaysInclude</title>
 
   <link href="style.css" rel="stylesheet">
-
   <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 </head>
 <body>
@@ -16,17 +17,28 @@
   </header>
   <section id="sidebar">
     <ul>
+      <a href="#doctype"><li>&lt;!DOCTYPE html&gt;</li></a>
+      <a href="#html"><li>&lt;html&gt;</li></a>
       <a href="#img"><li>&lt;img&gt;</li></a>
       <a href="#label"><li>&lt;label&gt;</li></a>
     </ul>
   </section>
   <main>
     <h1>alwaysInclude</h1>
+    <p>Stadardised and Accessible HTML guide.</p>
+    <a href="#doctype"><h2>&lt;!DOCTYPE html&gt;</h2></a>
+    <p>The doctype declaration is required as a DTD (Document Type Definition). &lt;!DOCTYPE html&gt; refers to HTML5.</p>
+    <a href="#html"><h2>&lt;html&gt;</h2></a>
+    <p>The &lt;html&gt; tag is required to tell browsers this document is written in HTML format.</p>
+    <p>The &lt;html&gt; tag should contain the following:</p>
+    <ul>
+      <li>lang="" - This attribute tells the browser the language the content of the page is written in. For example, 'en' would be the value for english, however this can be extended to 'en-gb' or 'en-us'.</li>
+    </ul>
     <a href="#img"><h2 id="img">&lt;img&gt;</h2></a>
     <p>Image tags must always contain the following:</p>
     <ul>
       <li>src="" - The src of an image is its source file.</li>
-      <li>alt="" - The alt value of an image is used when an image cannot be displayed. This could be read by a screen reader, or displayed on screen due to an invalid src.</li>
+      <li>alt="" - The alt value of an image is used when an image cannot be displayed. This could be read by a screen reader, or displayed on screen due to an invalid src. Note: An alt attribute should be left blank if the image is purely visual, holding no relevance to the content displayed on the page, however it is still important to include an alt attribute for all &lt;img&gt; tags in order to adhere to standards.</li>
     </ul>
     <a href="#label"><h2 id="label">&lt;label&gt;</h2></a>
     <p>Label tags must always contain the following:</p>
@@ -36,7 +48,7 @@
     </ul>
   </main>
   <footer>
-    <p>Project by Gorillis: <a href="https://gorillis.github.io/">gorillis.github.io</a></p>
+    <p>Project by Gorillis: <a href="https://gorillis.github.io/" target="_blank">gorillis.github.io</a></p>
   </footer>
 </body>
 
