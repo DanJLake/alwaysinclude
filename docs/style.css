@@ -22,8 +22,7 @@ html, body {
   background: -o-linear-gradient(left, #c8c8c8 0%, #e1e1e1 100%);
   background: -ms-linear-gradient(left, #c8c8c8 0%, #e1e1e1 100%);
   background: linear-gradient(to right, #c8c8c8 0%, #e1e1e1 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8c8c8', endColorstr='#e1e1e1', GradientType=1 );
-  border-right: 1px solid #c8c8c8; }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8c8c8', endColorstr='#e1e1e1', GradientType=1 ); }
   #sidebar ul li {
     list-style: none;
     font-size: 18px; }
@@ -45,7 +44,7 @@ html, body {
   #sidebar::-webkit-scrollbar-thumb:active {
     background: #000000; }
   #sidebar::-webkit-scrollbar-track {
-    background: #666666;
+    background: rgba(0, 0, 0, 0.1);
     border: 0px none #ffffff;
     border-radius: 50px; }
   #sidebar::-webkit-scrollbar-track:hover {
