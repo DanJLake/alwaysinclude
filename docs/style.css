@@ -32,6 +32,30 @@ html, body {
   #sidebar a:link, #sidebar a:visited {
     text-decoration: none;
     color: #323232; }
+  #sidebar ::-webkit-scrollbar {
+    width: 2px;
+    height: 2px; }
+  #sidebar ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px; }
+  #sidebar ::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 50px; }
+  #sidebar ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; }
+  #sidebar ::-webkit-scrollbar-thumb:active {
+    background: #000000; }
+  #sidebar ::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 50px; }
+  #sidebar ::-webkit-scrollbar-track:hover {
+    background: #666666; }
+  #sidebar ::-webkit-scrollbar-track:active {
+    background: #333333; }
+  #sidebar ::-webkit-scrollbar-corner {
+    background: transparent; }
 
 main {
   position: relative;
@@ -50,9 +74,11 @@ main {
     text-decoration: none;
     color: #969696; }
 
-h2:before {
-  color: #969696;
-  content: "# "; }
+h2 {
+  width: auto; }
+  h2:before {
+    color: #969696;
+    content: "# "; }
 
 p {
   font-size: 16px; }
