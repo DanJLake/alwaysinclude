@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 html, body{
+  position:relative;
   font-family:monospace;
   width:100%;
   height:100%;
@@ -109,6 +110,13 @@ main{
     text-decoration:none;
     color:rgba(150,150,150,1.00);
   }
+}
+
+footer{
+  position:absolute;
+  bottom:0;
+  right:0;
+  width:auto;
 }
 
 h2{
