@@ -19,36 +19,62 @@
     <ul>
       <a href="#doctype"><li>&lt;!DOCTYPE html&gt;</li></a>
       <a href="#html"><li>&lt;html&gt;</li></a>
+      <a href="#link"><li>&lt;link&gt;</li></a>
+      <a href="#header"><li>&lt;header&gt;</li>
+      <a href="#nav"><li>&lt;nav&gt;</li></a>
+      <a href="#main"><li>&lt;main&gt;</li></a>
+      <a href="#article"><li>&lt;article&gt;</li></a>
+      <a href="#footer"><li>&lt;footer&gt;</li></a>
+      <a href="#figure"><li>&lt;figure&gt;</li></a>
+      <a href="#figcaption"><li>&lt;figcaption&gt;</li></a>
       <a href="#img"><li>&lt;img&gt;</li></a>
+      <a href="#headings"><li>&lt;h1&gt;...&lt;h6&gt;</li></a>
       <a href="#label"><li>&lt;label&gt;</li></a>
+      <a href="#time"><li>&lt;time&gt;</li></a>
     </ul>
   </section>
   <main>
     <h1>alwaysInclude</h1>
     <p>Stadardised and Accessible HTML guide.</p>
-    <a href="#doctype"><h2>&lt;!DOCTYPE html&gt;</h2></a>
+    <a href="#doctype"><h2 id="doctype">&lt;!DOCTYPE html&gt;</h2></a>
     <p>The doctype declaration is required as a DTD (Document Type Definition). &lt;!DOCTYPE html&gt; refers to HTML5.</p>
-    <a href="#html"><h2>&lt;html&gt;</h2></a>
-    <p>The &lt;html&gt; tag is required to tell browsers this document is written in HTML format.</p>
+    <a href="#html"><h2 id="html">&lt;html&gt;</h2></a>
+    <p>The &lt;html&gt; tag tells browsers this document is written in HTML format.</p>
     <p>The &lt;html&gt; tag should contain the following:</p>
     <ul>
       <li>lang="" - This attribute tells the browser the language the content of the page is written in. For example, 'en' would be the value for english, however this can be extended to 'en-gb' or 'en-us'.</li>
     </ul>
+    <a href="#link"><h2 id="link">&lt;link&gt;</h2></a>
+    <p>Links to external files such as CSS files and icons.</p>
+    <p>The &lt;link&gt; tag must always contain the following attributes:</p>
+    <ul>
+      <li>href="" - the location of the file being linked. The file type extension must be included.</li>
+      <li>rel="" - specifies the contents of the document being linked. Possible values would be 'stylesheet' for a CSS stylesheet, or 'shortcut icon' for a favicon.</li>
+    </ul>
+    <a href="#header"><h2 id="header">&lt;header&gt;</h2></a>
+    <a href="#nav"><h2 id="nav">&lt;nav&gt;</h2></a>
+    <a href="#main"><h2 id="main">&lt;main&gt;</h2></a>
+    <a href="#article"><h2 id="article">&lt;article&gt;</h2></a>
+    <a href="#footer"><h2 id="footer">&lt;footer&gt;</h2></a>
+    <a href="#figure"><h2 id="figure">&lt;figure&gt;</h2></a>
+    <a href="#figcaption"><h2 id="figcaption">&lt;figcaption&gt;</h2></a>
     <a href="#img"><h2 id="img">&lt;img&gt;</h2></a>
     <p>Image tags must always contain the following:</p>
     <ul>
-      <li>src="" - The src of an image is its source file.</li>
+      <li>src="" - The src of an image is its source file. This can be a link to a file stored in any accessible location, whether its local (stored on the same server/in the same folder or directory as the html file), or located elsewhere online.</li>
       <li>alt="" - The alt value of an image is used when an image cannot be displayed. This could be read by a screen reader, or displayed on screen due to an invalid src. Note: An alt attribute should be left blank if the image is purely visual, holding no relevance to the content displayed on the page, however it is still important to include an alt attribute for all &lt;img&gt; tags in order to adhere to standards.</li>
     </ul>
+    <a href="#headings"><h2 id="headings">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; &amp; &lt;h6&gt;</h2></a>
     <a href="#label"><h2 id="label">&lt;label&gt;</h2></a>
     <p>Label tags must always contain the following:</p>
     <ul>
       <li>for="" - The 'for' attribute on a label is used by screen
          readers to associate that label with a form control.</li>
     </ul>
+    <a href="#time"><h2 id="time">&lt;time&gt;</h2></a>
   </main>
   <footer>
-    <p>Project by Gorillis: <a href="https://gorillis.github.io/" target="_blank">gorillis.github.io</a></p>
+    <p><a href="https://gorillis.github.io/" target="_blank">gorillis.github.io</a></p>
   </footer>
 </body>
 

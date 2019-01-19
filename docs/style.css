@@ -14,7 +14,7 @@ html, body {
   vertical-align: top;
   margin: 0;
   padding: 0;
-  width: calc( 25% - 10px );
+  width: calc( 25% - 7.2px );
   height: 100%;
   overflow-y: scroll;
   background: #c8c8c8;
@@ -29,6 +29,7 @@ html, body {
 #sidebar ul li {
   list-style: none;
   font-size: 18px;
+  margin: 0;
 }
 #sidebar ul li:hover {
   list-style: georgian;
@@ -73,9 +74,9 @@ main {
   display: inline-block;
   vertical-align: top;
   margin: 0;
-  padding: 0;
-  width: 75%;
-  height: 100%;
+  padding: 0 0 15px 10px;
+  width: calc(75% - 10px);
+  height: calc(100% - 25px);
   overflow-y: scroll;
   background: white;
 }
@@ -91,24 +92,22 @@ main a:hover, main a:active {
 footer {
   position: absolute;
   bottom: 0;
-  right: 35px;
+  left: 0px;
   width: auto;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50% 50% 0% 0%;
+}
+footer p {
+  margin: 15px 2px 5px;
+  vertical-align: bottom;
 }
 footer a:link, footer a:visited {
-  color: red;
-  /* For browsers that do not support gradients */
-  color: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
-  /* For Safari 5.1 to 6.0 */
-  color: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-  /* For Opera 11.1 to 12.0 */
-  color: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-  /* For Firefox 3.6 to 15 */
-  color: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
-  /* Standard syntax (must be last) */
+  color: black;
 }
 
 h2 {
-  width: auto;
+  font-size: 3vh;
 }
 h2:before {
   color: #969696;
@@ -116,11 +115,13 @@ h2:before {
 }
 
 p {
-  font-size: 16px;
+  font-size: 2.2vh;
+  text-indent: 25px;
 }
 
 ul li {
-  font-size: 18px;
+  font-size: 2.2vh;
+  margin: 0 3.5px 1em 0;
 }
 
 /*# sourceMappingURL=style.css.map */

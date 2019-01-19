@@ -19,7 +19,7 @@ html, body{
   margin:0;
   padding:0;
 
-  width:calc( 25% - 10px );
+  width:calc( 25% - 7.2px );
   height:100%;
 
   overflow-y:scroll;
@@ -38,6 +38,7 @@ html, body{
   ul li{
     list-style:none;
     font-size:18px;
+    margin:0;
 
     &:hover{
       list-style:georgian;
@@ -93,10 +94,10 @@ main{
   vertical-align:top;
 
   margin:0;
-  padding:0;
+  padding:0 0 15px 10px;
 
-  width:75%;
-  height:100%;
+  width:calc(75% - 10px);
+  height:calc(100% - 25px);
 
   overflow-y:scroll;
 
@@ -115,20 +116,25 @@ main{
 footer{
   position:absolute;
   bottom:0;
-  right:35px;
+  left:0px;
   width:auto;
+  background:rgba(255,255,255,0.00);
+  border:1px solid rgba(0,0,0,0.00);
+  border-radius:50% 50% 0% 0%;
+
+  p{
+    margin:15px 2px 5px;
+    vertical-align:bottom;
+  }
 
   a:link, a:visited{
-    color: red; /* For browsers that do not support gradients */
-    color: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
-    color: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
-    color: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
-    color: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+    color:rgba(0,0,0,1.00);
   }
 }
 
 h2{
-  width:auto;
+
+  font-size:3vh;
 
   &:before{
     color:rgba(150,150,150,1.00);
@@ -138,9 +144,13 @@ h2{
 }
 
 p{
-  font-size:16px;
+  //font-size:16px;
+  font-size:2.2vh;
+  text-indent:25px;
 }
 
 ul li{
-  font-size:18px;
+  //font-size:18px;
+  font-size:2.2vh;
+  margin:0 3.5px 1em 0;
 }
