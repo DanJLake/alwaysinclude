@@ -41,7 +41,8 @@ html, body{
     margin:0;
 
     &:hover{
-      list-style:georgian;
+      //The 16 in this link represents pixel size. Change to any other value to change the size.
+      list-style:georgian outside url(https://img.icons8.com/ios/16/000000/pyramids-filled.png);
     }
   }
 
@@ -93,11 +94,11 @@ main{
   display:inline-block;
   vertical-align:top;
 
-  margin:0;
-  padding:0 0 15px 10px;
+  margin:0 0 0px 0;
+  padding:0 0 0px 10px;
 
   width:calc(75% - 10px);
-  height:calc(100% - 25px);
+  height:calc(100%);
 
   overflow-y:scroll;
 
@@ -146,11 +147,11 @@ h2{
 p{
   //font-size:16px;
   font-size:2.2vh;
-  text-indent:25px;
+  margin-left:24px;
 }
 
 ul li{
   //font-size:18px;
   font-size:2.2vh;
-  margin:0 3.5px 1em 0;
+  margin:0 3.5px 1em 2px;
 }

@@ -5,35 +5,20 @@
 
   <title>alwaysInclude</title>
 
-  <link href="style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.png">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="icons/favicon.png" rel="shortcut icon">
+
+  <script src="js/headingLister.js" type="text/javascript"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 </head>
-<body>
+<body onLoad="runDatShit()">
   <header>
 
   </header>
-  <section id="sidebar">
-    <ul>
-      <a href="#doctype"><li>&lt;!DOCTYPE html&gt;</li></a>
-      <a href="#html"><li>&lt;html&gt;</li></a>
-      <a href="#link"><li>&lt;link&gt;</li></a>
-      <a href="#header"><li>&lt;header&gt;</li>
-      <a href="#nav"><li>&lt;nav&gt;</li></a>
-      <a href="#main"><li>&lt;main&gt;</li></a>
-      <a href="#article"><li>&lt;article&gt;</li></a>
-      <a href="#footer"><li>&lt;footer&gt;</li></a>
-      <a href="#figure"><li>&lt;figure&gt;</li></a>
-      <a href="#figcaption"><li>&lt;figcaption&gt;</li></a>
-      <a href="#img"><li>&lt;img&gt;</li></a>
-      <a href="#headings"><li>&lt;h1&gt;...&lt;h6&gt;</li></a>
-      <a href="#label"><li>&lt;label&gt;</li></a>
-      <a href="#time"><li>&lt;time&gt;</li></a>
-    </ul>
-  </section>
-  <main>
+  <nav id="sidebar"><!-- headingLister.js --></nav>
+  <main id="main">
     <h1>alwaysInclude</h1>
     <p>Stadardised and Accessible HTML guide.</p>
     <a href="#doctype"><h2 id="doctype">&lt;!DOCTYPE html&gt;</h2></a>
@@ -52,10 +37,21 @@
       <li>rel="" - specifies the contents of the document being linked. Possible values would be 'stylesheet' for a CSS stylesheet, or 'shortcut icon' for a favicon.</li>
     </ul>
     <a href="#header"><h2 id="header">&lt;header&gt;</h2></a>
+    <p>A &lt;div&gt; like container specifically for content placed at the top of a webpage, usually a top bar with a logo and navigation. A screen reader will recognise this as such allowing for greater accessibility.</p>
     <a href="#nav"><h2 id="nav">&lt;nav&gt;</h2></a>
+    <p>A container for the page navigation. Can be used by screen readers to quickly jump to the navigation links on a page. Usually placed inside the &lt;header&gt;, however it can be placed anywhere on the page.</p>
     <a href="#main"><h2 id="main">&lt;main&gt;</h2></a>
+    <p>The container that should hold the main content of a webpage. Screen readers will identify this content as the main content and allow the user to easily access it.</p>
     <a href="#article"><h2 id="article">&lt;article&gt;</h2></a>
+    <p>The container is used to wrap independent, self-contained content. Perfect for blog or news articles, or forum posts.</p>
     <a href="#footer"><h2 id="footer">&lt;footer&gt;</h2></a>
+    <p>The container that marks the page footer, this usually contains secondary navigation links, legal information, social media icons and other content that may be generalised site-wide, or not directly related to the content in the &lt;main&gt; section.</p>
+    <a href="#section"><h2 id="section">&lt;section&gt;</h2></a>
+    <p>A container used to group related content. If none of the above HTML5 containers describe the section, or there are many sections on the page, this container allows screen readers to recognise the content inside is related.</p>
+    <p>A section tag should always contain the following:</p>
+    <ul>
+      <li>id="" - An ID attribute identifies the nature and purpose of the section, whether vague or specific.</li>
+    </ul>
     <a href="#figure"><h2 id="figure">&lt;figure&gt;</h2></a>
     <a href="#figcaption"><h2 id="figcaption">&lt;figcaption&gt;</h2></a>
     <a href="#img"><h2 id="img">&lt;img&gt;</h2></a>
@@ -65,13 +61,21 @@
       <li>alt="" - The alt value of an image is used when an image cannot be displayed. This could be read by a screen reader, or displayed on screen due to an invalid src. Note: An alt attribute should be left blank if the image is purely visual, holding no relevance to the content displayed on the page, however it is still important to include an alt attribute for all &lt;img&gt; tags in order to adhere to standards.</li>
     </ul>
     <a href="#headings"><h2 id="headings">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; &amp; &lt;h6&gt;</h2></a>
+    <p>Headings of varying sizes.</p>
+    <p>Headings should always contain the following:</p>
+    <ul>
+      <li>id="" - Setting an ID will allow navigation to the header using anchor links.</li>
+    </ul>
     <a href="#label"><h2 id="label">&lt;label&gt;</h2></a>
     <p>Label tags must always contain the following:</p>
     <ul>
       <li>for="" - The 'for' attribute on a label is used by screen
          readers to associate that label with a form control.</li>
     </ul>
+    <a href="#fieldset"><h2 id="fieldset">&lt;fieldset&gt;</h2></a>
     <a href="#time"><h2 id="time">&lt;time&gt;</h2></a>
+
+    <br>
   </main>
   <footer>
     <p><a href="https://gorillis.github.io/" target="_blank">gorillis.github.io</a></p>
