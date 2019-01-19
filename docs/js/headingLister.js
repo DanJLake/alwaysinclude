@@ -22,6 +22,9 @@ function makeUL(array) {
     //Make every list item a link to corresponding heading
     item.innerHTML = "<a href=\"#" + item.innerText.replace("<", "").replace(">", "") + "\">" + item.innerHTML + "</a>";
     //Custom Headings
+    if (item.innerText == "<!DOCTYPE html>"){
+      item.innerHTML = "<a href=\"#doctype\">&lt;!DOCTYPE html&gt;</a>";
+    }
 
     if(item.innerText == "<h1>, <h2>, <h3>, <h4>, <h5> & <h6>"){
       item.innerHTML = "<a href=\"#headings\">&lt;h1&gt;...&lt;h6&gt;</a>";
