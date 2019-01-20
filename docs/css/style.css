@@ -93,13 +93,20 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0px;
-  width: auto;
+  width: calc(25% - 9.2px);
   background: rgba(255, 255, 255, 0);
-  border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 50% 50% 0% 0%;
+  border-right: 1px solid #c8c8c8;
+  background: #c8c8c8;
+  background: -moz-linear-gradient(left, #c8c8c8 0%, #e1e1e1 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #c8c8c8), color-stop(100%, #e1e1e1));
+  background: -webkit-linear-gradient(left, #c8c8c8 0%, #e1e1e1 100%);
+  background: -o-linear-gradient(left, #c8c8c8 0%, #e1e1e1 100%);
+  background: -ms-linear-gradient(left, #c8c8c8 0%, #e1e1e1 100%);
+  background: linear-gradient(to right, #c8c8c8 0%, #e1e1e1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#c8c8c8", endColorstr="#e1e1e1", GradientType=1 );
 }
 footer p {
-  margin: 15px 2px 5px;
+  margin: 10px 2px 5px;
   vertical-align: bottom;
 }
 footer a:link, footer a:visited {
@@ -126,6 +133,25 @@ p {
 ul li {
   font-size: 2.2vh;
   margin: 0 3.5px 1em 2px;
+}
+
+@media screen and (max-width: 440px) {
+  #sidebar {
+    display: block;
+    width: 100%;
+    height: 0;
+  }
+
+  main {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  footer {
+    background: white;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

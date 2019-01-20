@@ -1,6 +1,6 @@
 function runDatShit(){
 console.log('Running Function');
-var mainArea = document.getElementById('main');
+
 var options = document.getElementsByTagName('h2');
 
 
