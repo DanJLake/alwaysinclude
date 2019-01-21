@@ -11,7 +11,7 @@ html, body{
   color:rgba(25,25,25,1.00);
 }
 
-#sidebar{
+.sidebar{
   position:relative;
   display:inline-block;
   vertical-align:top;
@@ -35,14 +35,18 @@ html, body{
 
   //border-right:1px solid rgba(200,200,200,1.00);
 
+  ul{
+    margin:15px 0 55px -15px;
+  }
+
   ul li{
     list-style:none;
-    font-size:18px;
+    font-size:16px;
     margin:0;
 
     &:hover{
       //The 16 in this link represents pixel size. Change to any other value to change the size.
-      list-style:georgian outside url(https://img.icons8.com/ios/16/000000/pyramids-filled.png);
+      list-style:georgian outside url(https://img.icons8.com/ios/14/000000/pyramids-filled.png);
     }
   }
 
@@ -115,12 +119,14 @@ main{
 }
 
 footer{
-  position:absolute;
+  position:fixed;
   bottom:0;
-  left:0px;
-  width:calc(25% - 9.2px);
+  left:0;
+
+  width:calc(25% - 8.7px);
+
   background:rgba(255,255,255,0.00);
-  border-right:1px solid rgba(200,200,200,1.00);
+  border-right:1.5px solid rgba(200,200,200,1.00);
   //border-radius:50% 50% 0% 0%;
 
   background: rgba(200,200,200,1);
@@ -133,6 +139,8 @@ footer{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8c8c8', endColorstr='#e1e1e1', GradientType=1 );
 
 
+
+
   p{
     margin:10px 2px 5px;
     vertical-align:bottom;
@@ -140,6 +148,47 @@ footer{
 
   a:link, a:visited{
     color:rgba(0,0,0,1.00);
+  }
+
+  #github-icon{
+    position:relative;
+    display:inline-block;
+    background:url("https://img.icons8.com/windows/32/000000/github.png") no-repeat center;
+    height:24px;
+    width:24px;
+    margin:10px 5px 10px 10px;
+    font-size:0px;
+  }
+
+  #gorillis-logo{
+    position:relative;
+    display:inline-block;
+    background:url("https://img.icons8.com/color/24/000000/anubis.png") no-repeat center;
+    height:23px;
+    width:23px;
+    margin:10px 10px 10px 5px;
+    font-size:0px;
+
+    border:1.2px solid black;
+    border-radius:50%;
+  }
+}
+
+
+#nav-caller{
+  display:none;
+  position:fixed;
+  top:20px;
+  right:20px;
+
+  //The 32 in this link represents pixel size. Change to any other value to change the size.
+  background:url("https://img.icons8.com/cotton/32/000000/menu.png") no-repeat center;
+  height:28px;
+  width:28px;
+  //border:1px solid black;
+
+  &:hover{
+    //filter:invert(100%);
   }
 }
 
@@ -171,10 +220,91 @@ ul li{
 }
 
 @media screen and (max-width: 440px){
-  #sidebar{
+  .sidebar{
     display:block;
     width:100%;
     height:0;
+
+    transition:height 1s ease;
+  }
+  .navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    display:block;
+    width:100%;
+    height:100%;
+    z-index:2;
+    background:white;
+    overflow-y:scroll;
+
+    transition:height 1s ease;
+
+    background: rgba(200,200,200,1);
+    background: -moz-linear-gradient(left, rgba(200,200,200,1) 0%, rgba(225,225,225,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(200,200,200,1)), color-stop(100%, rgba(225,225,225,1)));
+    background: -webkit-linear-gradient(left, rgba(200,200,200,1) 0%, rgba(225,225,225,1) 100%);
+    background: -o-linear-gradient(left, rgba(200,200,200,1) 0%, rgba(225,225,225,1) 100%);
+    background: -ms-linear-gradient(left, rgba(200,200,200,1) 0%, rgba(225,225,225,1) 100%);
+    background: linear-gradient(to right, rgba(200,200,200,1) 0%, rgba(225,225,225,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8c8c8', endColorstr='#e1e1e1', GradientType=1 );
+
+    //border-right:1px solid rgba(200,200,200,1.00);
+
+    ul li{
+      list-style:none;
+      font-size:18px;
+      margin:0;
+
+      &:hover{
+        //The 16 in this link represents pixel size. Change to any other value to change the size.
+        list-style:georgian outside url(https://img.icons8.com/ios/16/000000/pyramids-filled.png);
+      }
+    }
+
+    a:link, a:visited{
+      text-decoration:none;
+      color:rgba(50,50,50,1.00);
+    }
+    a:hover, a:active{
+
+    }
+
+
+    &::-webkit-scrollbar {
+      width: 2px;
+      height: 2px;
+    }
+    &::-webkit-scrollbar-button {
+      width: 0px;
+      height: 0px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #e1e1e1;
+      border: 0px none #ffffff;
+      border-radius: 50px;
+    }
+    &::-webkit-scrollbar-thumb:active {
+      background: #000000;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba(0,0,0,0.1);
+      border: 0px none #ffffff;
+      border-radius: 50px;
+    }
+    &::-webkit-scrollbar-track:hover {
+      background: #666666;
+    }
+    &::-webkit-scrollbar-track:active {
+      background: #333333;
+    }
+    &::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+  }
+  #nav-caller{
+    display:block;
+    z-index:3;
   }
   main{
     display:block;
@@ -182,7 +312,9 @@ ul li{
     padding:0;
   }
   footer{
-    background:white;
-    width:100%;
+    width:calc(100%);
+    border:none;
+
+    transition:display 1s ease;
   }
 }
