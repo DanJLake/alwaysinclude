@@ -249,6 +249,8 @@ ul li {
   main {
     display: block;
     width: 100%;
+    overflow: auto;
+    height: auto;
     padding: 0;
   }
 
