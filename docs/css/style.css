@@ -204,7 +204,7 @@ ul li {
     margin: 0;
   }
   .navbar ul li:hover {
-    list-style: georgian outside url(https://img.icons8.com/ios/12/000000/pyramids-filled.png);
+    list-style: georgian outside url(https://img.icons8.com/ios/10/000000/pyramids-filled.png);
   }
   .navbar a:link, .navbar a:visited {
     text-decoration: none;
