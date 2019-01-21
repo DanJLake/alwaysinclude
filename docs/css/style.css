@@ -150,7 +150,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3vh;
+  font-size: 22px;
 }
 h2:before {
   color: #969696;
@@ -158,7 +158,7 @@ h2:before {
 }
 
 p {
-  font-size: 2.2vh;
+  font-size: 16px;
   margin-left: 25px;
 }
 
