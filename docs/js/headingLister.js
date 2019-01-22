@@ -25,7 +25,7 @@ function makeUL(array) {
     //Change values of attribute entries
     if (item.innerText.indexOf('=""') !== -1){
       item.innerText = item.innerText.replace('=""', '-attribute');
-      item.innerHTML = "<a href=\"#" + item.innerText + "\" onClick=\"forceHideNav();\">" + item.innerText.replace("-", " ") + "</a>";
+      item.innerHTML = "<a href=\"#" + item.innerText + "\" onClick=\"forceHideNav();\">" + item.innerText.replace("-attribute", "") + "</a>";
     }
 
     //Custom Headings
@@ -45,8 +45,8 @@ function makeUL(array) {
 
     //Because id is the first attribute, add title before it
 
-    else if(item.innerText == 'id attribute'){
-      item.innerHTML = "<br></li><li><b>HTML Attributes</b></li><li><br><a href=\"#" + item.innerText.replace(" ", "-") + "\" id=\"id-att-link\" onClick=\"forceHideNav();\">" + item.innerText + "</a>";
+    else if(item.innerText == 'id'){
+      item.innerHTML = "<br></li><li><b>HTML Attributes</b></li><li><br><a href=\"#" + item.innerText.replace("id", "id-attribute") + "\" onClick=\"forceHideNav();\">" + item.innerText.replace("-attribute", "") + "</a>";
     }
 
     // Add it to the list:
