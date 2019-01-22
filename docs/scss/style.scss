@@ -125,7 +125,8 @@ main{
 code{
   background:rgba(225,225,225,1);
   border-radius:1px;
-  padding:0 5px;
+  padding:2px 5px;
+  font-size:calc(100% - 3px);
 }
 }
 
