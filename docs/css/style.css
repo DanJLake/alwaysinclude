@@ -87,6 +87,11 @@ main a:hover, main a:active {
   text-decoration: none;
   color: #969696;
 }
+main code {
+  background: #e1e1e1;
+  border-radius: 1px;
+  padding: 0 5px;
+}
 
 footer {
   position: fixed;
@@ -123,12 +128,12 @@ footer #github-icon {
 footer #gorillis-logo {
   position: relative;
   display: inline-block;
-  background: url("https://img.icons8.com/color/24/000000/anubis.png") no-repeat center;
+  background: rgba(0, 0, 0, 0) url("https://img.icons8.com/color/24/000000/anubis.png") no-repeat center;
   height: 23px;
   width: 23px;
   margin: 10px 10px 10px 1px;
   font-size: 0px;
-  border: 1.2px solid black;
+  border: 1.2px solid #000001;
   border-radius: 50%;
 }
 
