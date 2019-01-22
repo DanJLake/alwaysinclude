@@ -21,24 +21,31 @@ function makeUL(array) {
 
     //Make every list item a link to corresponding heading
     item.innerHTML = "<a href=\"#" + item.innerText.replace("<", "").replace(">", "") + "\" onClick=\"forceHideNav();\">" + item.innerHTML + "</a>";
-    //Custom Headings
-    if (item.innerText == "<!DOCTYPE html>"){
-      item.innerHTML = "<b>HTML Elements</b></li><li><br><a href=\"#doctype\" onClick=\"forceHideNav();\">&lt;!DOCTYPE html&gt;</a>";
-    }
 
-    if (item.innerText == "<h1>, <h2>, <h3>, <h4>, <h5> & <h6>"){
-      item.innerHTML = "<a href=\"#headings\" onClick=\"forceHideNav();\">&lt;h1&gt;...&lt;h6&gt;</a>";
-    }
-
-
-
-
+    //Change values of attribute entries
     if (item.innerText.indexOf('=""') !== -1){
       item.innerText = item.innerText.replace('=""', '-attribute');
       item.innerHTML = "<a href=\"#" + item.innerText + "\" onClick=\"forceHideNav();\">" + item.innerText.replace("-", " ") + "</a>";
     }
 
-    if(item.innerText == 'id attribute'){
+    //Custom Headings
+
+    //Tags conatining a space require an alternative ID to the one automatically assigned
+    //Automatic change is planned but for now a manual change is required
+
+    if (item.innerText == "<!DOCTYPE html>"){
+      item.innerHTML = "<b>HTML Elements</b></li><li><br><a href=\"#doctype\" onClick=\"forceHideNav();\">&lt;!DOCTYPE html&gt;</a>";
+    }
+
+    //h1-h6 is the only entry containing multiple tags, this requires an ID to be assigned manually
+
+    else if (item.innerText == "<h1>, <h2>, <h3>, <h4>, <h5> & <h6>"){
+      item.innerHTML = "<a href=\"#headings\" onClick=\"forceHideNav();\">&lt;h1&gt;...&lt;h6&gt;</a>";
+    }
+
+    //Because id is the first attribute, add title before it
+
+    else if(item.innerText == 'id attribute'){
       item.innerHTML = "<br></li><li><b>HTML Attributes</b></li><li><br><a href=\"#" + item.innerText.replace(" ", "-") + "\" id=\"id-att-link\" onClick=\"forceHideNav();\">" + item.innerText + "</a>";
     }
 
