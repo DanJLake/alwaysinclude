@@ -39,7 +39,7 @@ function makeUL(array) {
     }
 
     if(item.innerText == 'id attribute'){
-      item.innerHTML = "<br><a href=\"#" + item.innerText + "\" id=\"id-att-link\" onClick=\"forceHideNav();\">" + item.innerText + "</a>";
+      item.innerHTML = "<br><a href=\"#" + item.innerText.replace(" ", "-") + "\" id=\"id-att-link\" onClick=\"forceHideNav();\">" + item.innerText + "</a>";
     }
 
     // Add it to the list:
