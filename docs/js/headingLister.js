@@ -23,7 +23,7 @@ function makeUL(array) {
     item.innerHTML = "<a href=\"#" + item.innerText.replace("<", "").replace(">", "") + "\" onClick=\"forceHideNav();\">" + item.innerHTML + "</a>";
     //Custom Headings
     if (item.innerText == "<!DOCTYPE html>"){
-      item.innerHTML = "<a href=\"#doctype\" onClick=\"forceHideNav();\">&lt;!DOCTYPE html&gt;</a>";
+      item.innerHTML = "<b>HTML Elements</b></li><li><br><a href=\"#doctype\" onClick=\"forceHideNav();\">&lt;!DOCTYPE html&gt;</a>";
     }
 
     if (item.innerText == "<h1>, <h2>, <h3>, <h4>, <h5> & <h6>"){
@@ -39,7 +39,7 @@ function makeUL(array) {
     }
 
     if(item.innerText == 'id attribute'){
-      item.innerHTML = "<br><a href=\"#" + item.innerText.replace(" ", "-") + "\" id=\"id-att-link\" onClick=\"forceHideNav();\">" + item.innerText + "</a>";
+      item.innerHTML = "<br></li><li><b>HTML Attributes</b></li><li><br><a href=\"#" + item.innerText.replace(" ", "-") + "\" id=\"id-att-link\" onClick=\"forceHideNav();\">" + item.innerText + "</a>";
     }
 
     // Add it to the list:
