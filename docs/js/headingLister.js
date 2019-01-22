@@ -26,10 +26,21 @@ function makeUL(array) {
       item.innerHTML = "<a href=\"#doctype\" onClick=\"forceHideNav();\">&lt;!DOCTYPE html&gt;</a>";
     }
 
-    if(item.innerText == "<h1>, <h2>, <h3>, <h4>, <h5> & <h6>"){
+    if (item.innerText == "<h1>, <h2>, <h3>, <h4>, <h5> & <h6>"){
       item.innerHTML = "<a href=\"#headings\" onClick=\"forceHideNav();\">&lt;h1&gt;...&lt;h6&gt;</a>";
     }
 
+
+
+
+    if (item.innerText.indexOf('=""') !== -1){
+      item.innerText = item.innerText.replace('=""', '-attribute');
+      item.innerHTML = "<a href=\"#" + item.innerText + "\" onClick=\"forceHideNav();\">" + item.innerText.replace("-", " ") + "</a>";
+    }
+
+    if(item.innerText == 'id attribute'){
+      item.innerHTML = "<br><a href=\"#" + item.innerText + "\" id=\"id-att-link\" onClick=\"forceHideNav();\">" + item.innerText + "</a>";
+    }
 
     // Add it to the list:
     list.appendChild(item);

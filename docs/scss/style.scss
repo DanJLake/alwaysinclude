@@ -84,7 +84,7 @@ html, body{
 
     &:hover{
       //The 14 in this link represents pixel size. Change to any other value to change the size.
-      list-style:georgian outside url(https://img.icons8.com/ios/14/000000/pyramids-filled.png);
+      //list-style:georgian outside url(https://img.icons8.com/ios/14/000000/pyramids-filled.png);
     }
   }
 
@@ -208,13 +208,17 @@ p{
   font-size:16px;
   //font-size:2.2vh;
   margin-left:25px;
+  margin-right:10px;
 }
 
 ul li{
   font-size:16px;
   //font-size:2.2vh;
   margin:0 3.5px 1em 2px;
+  width:auto;
 }
+
+
 
 @media screen and (max-width: 440px){
   .sidebar{
@@ -222,7 +226,7 @@ ul li{
     width:100%;
     height:0;
 
-    transition:height 1s ease;
+    transition:height 0s ease;
   }
   .navbar{
     position:fixed;
@@ -244,6 +248,14 @@ ul li{
 
     ul{
       margin:15px 0 55px -15px;
+
+      br{
+        list-style:none;
+
+        &:hover{
+          list-style:none;
+        }
+      }
     }
 
     ul li{
@@ -253,7 +265,7 @@ ul li{
 
       &:hover{
         //The 12 in this link represents pixel size. Change to any other value to change the size.
-        list-style:georgian outside url(https://img.icons8.com/ios/10/000000/pyramids-filled.png);
+        //list-style:georgian outside url(https://img.icons8.com/ios/10/000000/pyramids-filled.png);
       }
     }
 
