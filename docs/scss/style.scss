@@ -277,6 +277,15 @@ ul li{
     overflow:auto;
     height:auto;
     padding:0;
+
+    h2{
+      margin-left:10px;
+      margin-right:10px;
+    }
+    p, li{
+      margin-right:10px;
+      margin-left:10px;
+    }
   }
   footer{
     width:calc(100%);
