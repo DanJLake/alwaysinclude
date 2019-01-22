@@ -8,8 +8,8 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="icons/favicon.png" rel="shortcut icon">
 
-  <script src="js/headingLister.js" type="text/javascript"></script>
-  <script src="js/mobNav.js" type="text/javascript"></script>
+  <script src="js/headingLister.js"></script>
+  <script src="js/mobNav.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -27,17 +27,25 @@
   </nav>
   <main id="main-container">
     <div id="nav-caller" onClick="toggleNav()"></div>
+
     <h1>alwaysInclude</h1>
     <p>Stadardised and Accessible HTML guide.</p>
     <p>The aim of this guide is to list all HTML5 tags and their attributes that should be included in almost any HTML file, for either accessibility reasons, or to adhere to web standards.</p>
+    <!-- Split -->
     <a href="#doctype"><h2 id="doctype">&lt;!DOCTYPE html&gt;</h2></a>
     <p>The doctype declaration is required as a DTD (Document Type Definition). &lt;!DOCTYPE html&gt; refers to HTML5.</p>
+
+    <!-- Split -->
+
     <a href="#html"><h2 id="html">&lt;html&gt;</h2></a>
     <p>The &lt;html&gt; tag tells browsers this document is written in HTML format.</p>
     <p>The &lt;html&gt; tag should contain the following:</p>
     <ul>
       <li>lang="" - This attribute tells the browser the language the content of the page is written in. For example, 'en' would be the value for english, however this can be extended to 'en-gb' or 'en-us'.</li>
     </ul>
+
+    <!-- Split -->
+
     <a href="#link"><h2 id="link">&lt;link&gt;</h2></a>
     <p>Links to external files such as CSS files and icons.</p>
     <p>The &lt;link&gt; tag must always contain the following attributes:</p>
@@ -45,45 +53,104 @@
       <li>href="" - the location of the file being linked. The file type extension must be included.</li>
       <li>rel="" - specifies the contents of the document being linked. Possible values would be 'stylesheet' for a CSS stylesheet, or 'shortcut icon' for a favicon.</li>
     </ul>
+
+    <!-- Split -->
+
     <a href="#script"><h2 id="script">&lt;script&gt;</h2></a>
+    <p>Script tags are used to wrap JavaScript imports or inline code.</p>
+    <p>The &lt;script&gt; tag should always contain the following:</p>
+    <ul>
+      <li>src="" - The path to the file you are importing, if the script tag is being used to import a .js file.</li>
+    </ul>
+
+    <!-- Split -->
+
     <a href="#header"><h2 id="header">&lt;header&gt;</h2></a>
     <p>A &lt;div&gt; like container specifically for content placed at the top of a webpage, usually a top bar with a logo and navigation. A screen reader will recognise this as such allowing for greater accessibility.</p>
+
+    <!-- Split -->
+
     <a href="#nav"><h2 id="nav">&lt;nav&gt;</h2></a>
     <p>A container for the page navigation. Can be used by screen readers to quickly jump to the navigation links on a page. Usually placed inside the &lt;header&gt;, however it can be placed anywhere on the page.</p>
+
+    <!-- Split -->
+
     <a href="#main"><h2 id="main">&lt;main&gt;</h2></a>
     <p>The container that should hold the main content of a webpage. Screen readers will identify this content as the main content and allow the user to easily access it.</p>
+
+    <!-- Split -->
+
     <a href="#article"><h2 id="article">&lt;article&gt;</h2></a>
     <p>The container is used to wrap independent, self-contained content. Perfect for blog or news articles, or forum posts.</p>
+
+    <!-- Split -->
+
     <a href="#footer"><h2 id="footer">&lt;footer&gt;</h2></a>
     <p>The container that marks the page footer, this usually contains secondary navigation links, legal information, social media icons and other content that may be generalised site-wide, or not directly related to the content in the &lt;main&gt; section.</p>
+
+    <!-- Split -->
+
     <a href="#section"><h2 id="section">&lt;section&gt;</h2></a>
     <p>A container used to group related content. If none of the above HTML5 containers describe the section, or there are many sections on the page, this container allows screen readers to recognise the content inside is related.</p>
     <p>A section tag should always contain the following:</p>
     <ul>
       <li>id="" - An ID attribute identifies the nature and purpose of the section, whether vague or specific.</li>
     </ul>
+
+    <!-- Split -->
+
     <a href="#figure"><h2 id="figure">&lt;figure&gt;</h2></a>
+    <p>The figure tag is used to wrap self-contained content related to the main content of the page. A figure tag is usually used with an image, however it can be used for a variety of media, including videos, code snippets, and more.</p>
+    <p>The figure tag works with the figcaption tag to link the contained content with it's descriptive caption. This is useful for screen readers and other assistive technology.</p>
+
+    <!-- Split -->
+
     <a href="#figcaption"><h2 id="figcaption">&lt;figcaption&gt;</h2></a>
+    <p>The figcaption tag can be nested inside the &lt;figure&gt; tag to provide a description of the content it contains. This provides the user a clear description (caption) of the content, usually brief.</p>
+    <p>&lt;figcaption&gt; tags are useful for assistive technologies where the content of the &lt;figure&gt; may not be displayed.</p>
+
+    <!-- Split -->
+
     <a href="#img"><h2 id="img">&lt;img&gt;</h2></a>
     <p>Image tags must always contain the following:</p>
     <ul>
       <li>src="" - The src of an image is its source file. This can be a link to a file stored in any accessible location, whether its local (stored on the same server/in the same folder or directory as the html file), or located elsewhere online.</li>
       <li>alt="" - The alt value of an image is used when an image cannot be displayed. This could be read by a screen reader, or displayed on screen due to an invalid src. Note: An alt attribute should be left blank if the image is purely visual, holding no relevance to the content displayed on the page, however it is still important to include an alt attribute for all &lt;img&gt; tags in order to adhere to standards.</li>
     </ul>
+
+    <!-- Split -->
+
     <a href="#headings"><h2 id="headings">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; &amp; &lt;h6&gt;</h2></a>
     <p>Headings of varying sizes.</p>
     <p>Headings should always contain the following:</p>
     <ul>
       <li>id="" - Setting an ID will allow navigation to the header using anchor links.</li>
     </ul>
+
+    <!-- Split -->
+
     <a href="#label"><h2 id="label">&lt;label&gt;</h2></a>
     <p>Label tags must always contain the following:</p>
     <ul>
       <li>for="" - The 'for' attribute on a label is used by screen
          readers to associate that label with a form control.</li>
     </ul>
+
+    <!-- Split -->
+
     <a href="#fieldset"><h2 id="fieldset">&lt;fieldset&gt;</h2></a>
+    <p>Used to group related elements in a form. The &lt;fieldset&gt; can display a box around this group if required, however grouping elements also allows assistive technology to recognise the grouped items as related, and inform the user of this. This can provide context to these elements.</p>
+
+    <!-- Split -->
+
     <a href="#time"><h2 id="time">&lt;time&gt;</h2></a>
+    <p>Informs the browser that the nested content is time-related. This tag's real power is in it's 'datetime' attribute.</p>
+    <p>The &lt;time&gt; tag should always contain the following:</p>
+    <ul>
+      <li>datetime="" - Used to provide a machine-readable date-time when the content provides a human-readable version. This can be used by calendar application on smartphones, among other things, as well as assistive technologies.</li>
+    </ul>
+
+    <!-- Split -->
 
     <br>
   </main>
