@@ -31,7 +31,9 @@
     <h1>alwaysInclude</h1>
     <p>Stadardised and Accessible HTML guide.</p>
     <p>The aim of this guide is to list all HTML5 tags and their attributes that should be included in almost any HTML file, for either accessibility reasons, or to adhere to web standards.</p>
+
     <!-- Split -->
+
     <a href="#doctype"><h2 id="doctype" name="doctype">&lt;!DOCTYPE html&gt;</h2></a>
     <p>The doctype declaration is required as a DTD (Document Type Definition). &lt;!DOCTYPE html&gt; refers to HTML5.</p>
 
@@ -43,6 +45,20 @@
     <ul>
       <li>lang="" - This attribute tells the browser the language the content of the page is written in. For example, 'en' would be the value for english, however this can be extended to 'en-gb' or 'en-us'.</li>
     </ul>
+    <p>The HTML tag is required in every HTML5 document.</p>
+
+    <!-- Split -->
+
+    <a href="#head"><h2 id="head" name="head">&lt;head&gt;</h2></a>
+    <p>Contains elements that do not display to the user. These can be links to stylesheets or scripts, meta tags, the page title, embedded styles or scripts, the page icon, and more.</p>
+    <p>The head element is required in every HTML5 document.</p>
+
+    <!-- Split -->
+
+    <a href="#body"><h2 id="body" name="body">&lt;body&gt;</h2></a>
+    <p>Contains all elements that will render or decide what is rendered.</p>
+    <p>All of a webpage's content is nested inside the body tag.</p>
+    <p>A body element is required in all HTML5 documents.</p>
 
     <!-- Split -->
 
@@ -168,6 +184,15 @@
     </ul>
     <p>JavaScript can reference or change an element using it's name using the <code>getElementsByName()</code> function, returning an array of all elements with the queried name.</p>
     <p>While in older HTML versions the name attribute directed anchor links to the correct place, it is no longer supported for use with the &lt;a&gt; tag in HTML5.</p>
+
+    <!-- Split -->
+
+    <a href="class-attribute"><h2 id="class-attribute" name="class-attribute">class=""</h2></a>
+    <p>The class attribute's main use is to apply class-specific styles to elements and their children.</p>
+    <p>Classes are styled in CSS using the '.' selector.</p>
+    <p>JavaScript can create an array of elements of any particular class using the <code>getElementsByClassName()</code> function.</p>
+
+    <!-- Split -->
 
     <br>
   </main>
