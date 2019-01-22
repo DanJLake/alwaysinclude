@@ -154,9 +154,19 @@
 
     <a href='#id-attribute'><h2 id='id-attribute' name='id-attribute'>id=""</h2></a>
     <p>The ID attribute allows a HTML element to be individually identified. This is useful for a few reasons.</p>
-    <p>Newer browsers will direct anchor links based on the ID they reference. For older browsers, the name attribute is used to direct anchor links.</p>
+    <p>HTML5 documents will direct anchor links based on the ID they reference.</p>
     <p>CSS can be applied to an element using it's ID. CSS styles IDs using the '#' selector.</p>
-    <p>JavaScript can reference or change elements using their ID, with the <code>document.getElementById()</code> function.</p>
+    <p>JavaScript can reference or change elements using their ID with the <code>getElementById()</code> function.</p>
+
+    <a href="#name-attribute"><h2 id="name-attribute" name="name-attribute">name=""</h2></a>
+    <p>The name attribute is used in HTML5 for the following:</p>
+    <ul>
+      <li>Naming an element - Giving certain elements a name is useful, form elements for example can have their input read using their name as reference, and maps use the name attribute to identify the map for use in the usemap="" attribute.</li>
+      <li>Meta elements use the name attribute to identify their content.</li>
+    </ul>
+    <p>JavaScript can reference or change an element using it's name using the <code>getElementsByName()</code> function, returning an array of all elements with the queried name.</p>
+    <p>While in older HTML versions the name attribute directed anchor links to the correct place, it is no longer supported for use with the &lt;a&gt; tag in HTML5.</p>
+
     <br>
   </main>
 </body>
