@@ -34,7 +34,7 @@ function makeUL(array) {
     //Automatic change is planned but for now a manual change is required
 
     if (item.innerText == "<!DOCTYPE html>"){
-      item.innerHTML = "<b>HTML Elements</b></li><li><br><a href=\"#doctype\" onClick=\"forceHideNav();\">&lt;!DOCTYPE html&gt;</a>";
+      item.innerHTML = "<b>HTML Elements</b><br><a href=\"#doctype\" onClick=\"forceHideNav();\">&lt;!DOCTYPE html&gt;</a>";
     }
 
     //h1-h6 is the only entry containing multiple tags, this requires an ID to be assigned manually
@@ -46,7 +46,7 @@ function makeUL(array) {
     //Because id is the first attribute, add title before it
 
     else if(item.innerText == 'id'){
-      item.innerHTML = "<br></li><li><b>HTML Attributes</b></li><li><br><a href=\"#" + item.innerText.replace("id", "id-attribute") + "\" onClick=\"forceHideNav();\">" + item.innerText.replace("-attribute", "") + "</a>";
+      item.innerHTML = "<br><b>HTML Attributes</b><br><a href=\"#" + item.innerText.replace("id", "id-attribute") + "\" onClick=\"forceHideNav();\">" + item.innerText.replace("-attribute", "") + "</a>";
     }
 
     // Add it to the list:
